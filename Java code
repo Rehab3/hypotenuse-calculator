@@ -1,0 +1,26 @@
+/*this is a hypotenuse calculator*/
+import java.util.Scanner;
+public class JavaApplicationAssesment22 {
+
+    public static void main(String[] args) {
+      Scanner input=new Scanner (System.in);
+      for(int i=0;i<3;i++){
+      System.out.println("enter size of leg a and leg b");
+      double a = input.nextInt();
+      double b = input.nextInt();
+      double c = calculateHypotenuse(a,b);
+      System.out.println("Hypotenuse = "+ c);
+      }
+      }
+    
+      static double calculateHypotenuse (double num1,double num2){
+        double h;
+        double num3=Math.pow(num1,2);
+        double num4=Math.pow(num2,2);
+        h=Math.sqrt(num3+num4);
+        return h;
+        
+        
+      
+      }
+    }
